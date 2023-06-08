@@ -12,8 +12,8 @@ namespace News
         {
             var containerBuilder = new ContainerBuilder();
 
+            containerBuilder.RegisterType<StarWarsService>();
             containerBuilder.RegisterType<NewsService>();
-
             containerBuilder.RegisterType<MainShell>();
 
             containerBuilder.RegisterType<Navigator>().As<INavigate>();

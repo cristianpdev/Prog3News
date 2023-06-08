@@ -50,10 +50,7 @@
 
     <ShellContent ContentTemplate="{DataTemplate views:AboutView}" Title="About" Icon="{StaticResource AboutIcon}" />
 
-    <FlyoutItem Title="SWAPI - Planets" Icon="{StaticResource PlanetsIcon}">
-        <ContentPage Title="SWAPI - Planets" >
-            <StackLayout Margin="20">
-            </StackLayout>
-        </ContentPage>
-    </FlyoutItem>
+    <ShellContent ContentTemplate="{DataTemplate views:PlanetsView}" Title="SWAPI - Planets" >
+        <views:PlanetItem />
+    </ShellContent>
 </Shell>

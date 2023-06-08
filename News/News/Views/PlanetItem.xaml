@@ -4,7 +4,6 @@
              x:Class="News.Views.PlanetItem">
     <ContentView.Content>
         <Label Text="{Binding Name}" />
-
     </ContentView.Content>
     
 

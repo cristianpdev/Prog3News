@@ -38,7 +38,7 @@
     <EmbeddedResource Update="Views\PlanetItem.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Planets.xaml">
+    <EmbeddedResource Update="Views\PlanetsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

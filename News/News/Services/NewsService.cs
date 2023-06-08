@@ -30,8 +30,6 @@ namespace News.Services
             }
             return Newtonsoft.Json.JsonConvert.DeserializeObject<NewsResult>(ret);
 
-            //var json = await webclient.DownloadStringTaskAsync(url);
-            //return Newtonsoft.Json.JsonConvert.DeserializeObject<NewsResult>(json);
         }
 
         private string GetUrl(NewsScope scope)
