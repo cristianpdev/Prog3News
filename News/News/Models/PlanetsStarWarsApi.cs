@@ -27,6 +27,6 @@ namespace News.Models
     {
         public string Status { get; set; }
         public int TotalResults { get; set; }
-        public List<Planet> Planets { get; set; }
+        public List<Planet> Planets { get; set; } = new List<Planet>();
     }
 }

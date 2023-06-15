@@ -2,21 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:News.Views"
-             x:Name="palnetsview"
+             x:Name="planetsview"
              Title="SWAPI"
              x:Class="News.Views.PlanetsView">
     <ContentPage.Content>
-        <CollectionView ItemsSource="{Binding CurrentPlanets.Planets}">
-            <CollectionView.EmptyView>
-                <Label Text="Loading" />
-            </CollectionView.EmptyView>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <ContentView>
-                        <views:PlanetItem />
-                    </ContentView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+        <StackLayout Padding="14">
+            <CollectionView ItemsSource="{Binding CurrentPlanets.Planets}">
+                <CollectionView.EmptyView>
+                    <Label Text="Loading" />
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <views:PlanetItem />
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
