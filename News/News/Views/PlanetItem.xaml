@@ -3,8 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="News.Views.PlanetItem">
     <ContentView.Content>
-        <Label Text="{Binding name}" />
+        <Grid  Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="{Binding name}" 
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   FontSize="Title" />
+            <Label Text="Clima:" 
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   FontSize="Default" />
+            <Label Text="{Binding climate}"  
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   FontSize="Default" />
+            <Label Text="População:" 
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   FontSize="Default" />
+            <Label Text="{Binding population}"
+                   Padding="10"
+                   Grid.Row="3"
+                   Grid.Column="2"
+                   FontSize="Default"/>
+            <Line Stroke="Red"/>
+
+        </Grid>
     </ContentView.Content>
     
-
 </ContentView>
